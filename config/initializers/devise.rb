@@ -323,6 +323,8 @@ Devise.setup do |config|
   config.omniauth :github, (Rails.application.credentials[:github][Rails.env.to_sym][:id]).to_s, (Rails.application.credentials[:github][Rails.env.to_sym][:secret]).to_s, scope: "user"
   config.omniauth :google_oauth2, (Rails.application.credentials[:google][:id]).to_s, (Rails.application.credentials[:google][:secret]).to_s, {}
 
+  config.omniauth :twitter, (Rails.application.credentials[:twitter][:id]).to_s, (Rails.application.credentials[:twitter][:secret]).to_s
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
