@@ -322,7 +322,6 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :github, (Rails.application.credentials[:github][Rails.env.to_sym][:id]).to_s, (Rails.application.credentials[:github][Rails.env.to_sym][:secret]).to_s, scope: "user"
   config.omniauth :google_oauth2, (Rails.application.credentials[:google][:id]).to_s, (Rails.application.credentials[:google][:secret]).to_s, {}
-
   config.omniauth :twitter, (Rails.application.credentials[:twitter][:id]).to_s, (Rails.application.credentials[:twitter][:secret]).to_s
 
   # ==> Warden configuration
